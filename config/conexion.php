@@ -1,6 +1,4 @@
 <?php
-// config/conexion.php
-
 function conectar() {
     $host = 'localhost';
     $usuario = 'root';
