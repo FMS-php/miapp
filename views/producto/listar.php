@@ -6,3 +6,5 @@
         <a href="index.php?accion=editar&id=<?=$p['id'];?>">Editar</a>
     </p>
 <?php endforeach; ?>
+
+<a href="index.php?accion=crear">Anadir</a>

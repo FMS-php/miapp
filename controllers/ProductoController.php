@@ -8,6 +8,14 @@ class ProductoController {
         include("views/producto/listar.php");
     }
 
+    public function anadir() {
+        $producto = new Producto();
+        $nombre = $_POST['nombre'];
+        $precio = $_POST['precio'];
+        $resultados = $producto->crear($nombre, $precio);
+        include("views/producto/crear.php");
+    }
+    
     public function editar() {
         $producto = new Producto();
         $id = $_GET['id'];
