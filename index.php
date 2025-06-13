@@ -5,11 +5,15 @@ $controller = new ProductoController();
 $accion = $_GET['accion'] ?? 'index';
 
 if ($accion == 'crear') {
-    header('Location: views/producto/crear.php');
-}else if ($accion == 'editar') {
+    $controller->crear();
+} elseif ($accion == 'guardar') {
+    $controller->guardar();
+} elseif ($accion == 'editar') {
     $controller->editar();
-}else if ($accion == 'actualizar'){
+} elseif ($accion == 'actualizar') {
     $controller->actualizar();
+} elseif ($accion == 'borrar') {
+    $controller->borrar();
 } else {
     $controller->index();
 }

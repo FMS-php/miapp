@@ -8,12 +8,16 @@ class ProductoController {
         include("views/producto/listar.php");
     }
 
-    public function anadir() {
+    public function crear() {
+        include("views/producto/crear.php");
+    }
+
+    public function guardar() {
         $producto = new Producto();
         $nombre = $_POST['nombre'];
         $precio = $_POST['precio'];
         $resultados = $producto->crear($nombre, $precio);
-        include("views/producto/crear.php");
+        header("Location:index.php");
     }
     
     public function editar() {
@@ -30,6 +34,13 @@ class ProductoController {
         $precio = $_POST['precio'];
         $producto->actualizar($id, $nombre, $precio);
         header('Location: index.php');
+    }
+
+    public function borrar() { // NUEVO
+        $producto = new Producto();
+        $id = $_GET['id'];
+        $producto->borrar($id);
+        header("Location: index.php");
     }
 }
 ?>
