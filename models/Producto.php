@@ -28,7 +28,7 @@ class Producto {
         return $this->db->query($sql);
     }
 
-    public function borrar($id) { // NUEVO
+    public function borrar($id) {
         $sql = "DELETE FROM productos WHERE id=$id";
         return $this->db->query($sql);
     }
