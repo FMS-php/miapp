@@ -13,8 +13,8 @@ class Producto {
         return $this->db->query($sql);
     }
 
-    public function crear($nombre, $precio) {
-        $sql = "INSERT INTO productos (nombre, precio) VALUES ($nombre, $precio)";
+    public function guardar($nombre, $precio) {
+        $sql = "INSERT INTO productos (nombre, precio) VALUES ('$nombre', $precio)";
         return $this->db->query($sql);
     }
 

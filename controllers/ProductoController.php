@@ -18,7 +18,7 @@ class ProductoController {
         $producto = new Producto();
         $nombre = $_POST['nombre'];
         $precio = $_POST['precio'];
-        $producto->crear($nombre, $precio);
+        $producto->guardar($nombre, $precio);
         header("Location: index.php");
     }
 
