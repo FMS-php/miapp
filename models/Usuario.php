@@ -14,22 +14,22 @@ class Usuario {
     }
 
     public function guardar($nombre, $email) {
-        $sql = "INSERT INTO usuarios (nombre, email) VALUES ('$nombre', '$email')";
+        $sql = "INSERT INTO usuario (nombre, email) VALUES ('$nombre', '$email')";
         return $this->db->query($sql);
     }
 
     public function buscarPorId($id){
-        $sql = "SELECT * FROM usuarios WHERE id = $id";
+        $sql = "SELECT * FROM usuario WHERE id = $id";
         return $this->db->query($sql)->fetch_assoc();
     }
 
     public function actualizar($id, $nombre, $email) {
-        $sql = "UPDATE productos SET nombre='$nombre', email='$email' WHERE id='$id'";
+        $sql = "UPDATE usuario SET nombre='$nombre', email='$email' WHERE id='$id'";
         return $this->db->query($sql);
     }
 
     public function borrar($id) {
-        $sql = "DELETE FROM productos WHERE id=$id";
+        $sql = "DELETE FROM usuario WHERE id=$id";
         return $this->db->query($sql);
     }
 }

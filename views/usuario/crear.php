@@ -3,7 +3,7 @@
 ?>
 <h2>Crear Usuario</h2>
     
-<form method="POST" action="index.php?accion=guardarU">
+<form method="POST" action="UsuarioI.php?accion=guardar">
         
     Nombre: <input type="text" name="nombre"><br>
         

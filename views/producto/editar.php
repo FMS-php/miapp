@@ -8,7 +8,7 @@
         
     Nombre: <input type="text" name="nombre" value="<?= $datos['nombre'] ?>"><br>
         
-    Precio: <input type="text" name="precio" value="<?= $datos['precio'] ?>"><br>
+    Precio: <input type="number" name="precio" value="<?= $datos['precio'] ?>"><br>
        
     <input type="submit" value="Guardar cambios">
 

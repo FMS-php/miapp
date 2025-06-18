@@ -1,7 +1,11 @@
 <?require_once("config/conexion.php");?>
     
-<h2>Lista de Productos</h2>
+<header>
+    <h2>Lista de Productos</h2>
+    <a href="UsuarioI.php">Usuarios</a>
+</header>
 
+<br>
 <a href="index.php?accion=crear">Crear nuevo producto</a> 
 
 <?php foreach ($resultados as $p): ?>

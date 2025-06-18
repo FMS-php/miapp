@@ -1,8 +1,13 @@
 <?require_once("config/conexion.php");?>
-    
-<h2>Lista de Usuarios</h2>
 
-<a href="index.php?accion=crear">Crear nuevo Usuario</a> 
+
+<header>
+    <h2>Lista de Usuarios</h2>
+    <a href="Index.php">Productos</a>
+</header>
+
+<br>
+<a href="UsuarioI.php?accion=crear">Crear nuevo Usuario</a>
 
 <?php foreach ($resultados as $p): ?>
 
