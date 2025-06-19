@@ -1,6 +1,8 @@
 <?
     require_once("config/conexion.php");
 ?>
+<link rel="stylesheet" href="../css.css">
+
 <h2>Crear Producto</h2>
     
 <form method="POST" action="index.php?accion=guardar">

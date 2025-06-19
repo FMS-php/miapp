@@ -1,4 +1,5 @@
 <?require_once("config/conexion.php");?>
+<link rel="stylesheet" href="../css.css">
     
 <h2>Editar Producto</h2>
 
