@@ -1,5 +1,8 @@
-<?require_once("config/conexion.php");?>
-<link rel="stylesheet" href="../css.css">
+<?
+require_once("config/conexion.php");
+require_once("templates/css.css");
+?>
+<link rel="stylesheet" href="css.css">   
 
 <header>
     <h2>Lista de Usuarios</h2>

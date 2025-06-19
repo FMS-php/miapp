@@ -2,6 +2,7 @@
 
 require_once("config/conexion.php");
 require_once("controllers/UsuarioController.php");
+
 $controller = new UsuarioController();
 
 $accion = $_GET['accion'] ?? 'index';
